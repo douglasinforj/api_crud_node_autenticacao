@@ -1,0 +1,43 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+logs
+*.log
+*.out
+*.pid
+*.seed
+*.gz
+
+# dotenv environment variables
+.env
+
+# Editor settings
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Build / temp
+dist/
+tmp/
+temp/
+.cache/
+
+# Uploads (caso queira ignorar arquivos locais de upload)
+src/uploads/
+
+# Database dumps or backups
+*.sql
+*.sqlite
+
+# Coverage from testing
+coverage/
+
+# Optional: ignore package-lock if using yarn only
+package-lock.json
