@@ -41,15 +41,18 @@ npm install
 # Configurar ambiente
 cp .env.example .env
 # Editar o .env com suas credenciais do banco
+PORT=3000
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=senha_banco
+DB_NAME=api_crud_cadastro_node
+JWT_SECRET=secreta_super_secreta
 
 # Criar tabelas no banco de dados
 npx sequelize db:migrate
 
-# Popular com roles e permissões padrão
-node src/seeders/setup.js
-
 # Iniciar o servidor
-npm start
+npm run dev
 
 ```
 
