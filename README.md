@@ -6,7 +6,7 @@ API RESTful desenvolvida em **Node.js + Express** com **Sequelize**, **MySQL**, 
 
 ## Imagens do Sistema 
 
-## Tela de Login
+## Tela de API
 ![Tela DOC API](assets/api.png)
 
 
