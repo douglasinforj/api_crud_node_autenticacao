@@ -13,8 +13,12 @@ export const create = async (req, res) => {
 };
 
 export const list = async (req, res) => {
-    const clients = await ClientService.getClients();
-    res.json(clients);
+  try {
+    const result = await ClientService.getClients(req.query);
+    res.json(result);
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
 };
 
 export const show = async (req, res) => {
